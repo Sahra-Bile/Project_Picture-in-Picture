@@ -1,0 +1,21 @@
+@use "mixins" as m;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400;600&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(37, 37, 37);
+
+  .button-container {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7);
+  }
+  #button {
+    @include m.buttons;
+  }
+}
